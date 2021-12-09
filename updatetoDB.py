@@ -4,7 +4,7 @@ from crawlArtData import crawlFun
 
 def uploadDB(df):
 
-    artDB = mysql.connector.connect(host = "localhost", user = "root", password = "chou0212", database = "Art", auth_plugin='mysql_native_password')
+    artDB = mysql.connector.connect(host = "localhost", user = "root", password = "******", database = "Art", auth_plugin='mysql_native_password')
     mycursor = artDB.cursor()
 
     importsql = "INSERT INTO ArtData (UID, Category, EditModifyDate, StartDate, EndDate, HitRate, Time, LocationName, OnSale, Latitude, Longitude, EndTime) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
